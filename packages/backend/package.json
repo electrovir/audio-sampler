@@ -1,0 +1,28 @@
+{
+    "name": "@evir/backend",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "compile": "virmator compile",
+        "dev": "tsx --watch src/start-backend.script.ts",
+        "start": "node dist/start-backend.script.js",
+        "test": "virmator test node",
+        "test:coverage": "npm run test",
+        "test:update": "npm test update"
+    },
+    "dependencies": {
+        "@augment-vir/assert": "^31.16.0",
+        "@augment-vir/common": "^31.16.0",
+        "@augment-vir/node": "^31.16.0",
+        "@evir/common": "*",
+        "@rest-vir/define-service": "^0.15.1",
+        "@rest-vir/implement-service": "^0.15.1",
+        "@rest-vir/run-service": "^0.15.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.3"
+    },
+    "engines": {
+        "node": ">=22"
+    }
+}
